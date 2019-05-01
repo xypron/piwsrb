@@ -6,3 +6,5 @@ install:
 	groupadd --system --force piwsrb
 	systemctl enable relay-card.service
 	systemctl start relay-card.service
+
+clean:
