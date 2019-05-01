@@ -2,7 +2,11 @@ Scripts for the WaveShare RPi Relay Board
 =========================================
 
 This project supplies scripts to control the WaveShare RPi Relay Board on a
-Raspberry Pi running Debian.
+Raspberry Pi 3 B+ running Debian.
+
+GPIOs are board specific. You will have to adjust the GPIO numbers when not
+running on a Raspberry Pi 3 B+. Not observing this may result in data loss or
+damage to the board.
 
 Installation
 ------------
