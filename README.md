@@ -4,10 +4,40 @@ Scripts for the WaveShare RPi Relay Board
 This project supplies scripts to control the WaveShare RPi Relay Board on a
 Raspberry Pi running Debian.
 
+Installation
+------------
+
+To install the scripts use
+
+    sudo make install
+
+A group piwsrb is created that has access to the relay board. A systemd service
+is implemented that that opens the relevant GPIOs for write access by the group.
+
+You can assign your user to the group with
+
+    sudo adduser $USER piwsrb
+
+The authorization will become effective with the next logon.
+
+Usage
+-----
+
+Relay 1 can be switch on and off with
+
+    relay-card.gpio on
+    relay-card.gpio off
+
+Relay 2 can be switched on for one second with
+
+    relay-card.gpio reset
+
+Relay 3 is currently not used.
+
 License (BSD-2-Clause)
 ----------------------
 
-Copyright 2019, Heinrich Schuchardt <xypron.glpk@gmx.de>
+Copyright 2019, Heinrich Schuchardt \<xypron.glpk@gmx.de>
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
