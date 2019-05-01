@@ -2,7 +2,7 @@ Scripts for the WaveShare RPi Relay Board
 =========================================
 
 This project supplies scripts to control the WaveShare RPi Relay Board on a
-Raspberry Pi 3 B+ running Debian.
+Raspberry Pi 3 B+.
 
 GPIOs are board specific. You will have to adjust the GPIO numbers when not
 running on a Raspberry Pi 3 B+. Not observing this may result in data loss or
@@ -27,14 +27,18 @@ The authorization will become effective with the next logon.
 Usage
 -----
 
+The status of all relays can be displayed with
+
+    relay-card status
+
 Relay 1 can be switch on and off with
 
-    relay-card.gpio on
-    relay-card.gpio off
+    relay-card on
+    relay-card off
 
 Relay 2 can be switched on for one second with
 
-    relay-card.gpio reset
+    relay-card reset
 
 Relay 3 is currently not used.
 
