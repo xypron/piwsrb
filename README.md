@@ -20,7 +20,7 @@ is implemented that that opens the relevant GPIOs for write access by the group.
 
 You can assign your user to the group with
 
-    sudo adduser $USER piwsrb
+    sudo usermod -G piwsrb -a $USER
 
 The authorization will become effective with the next logon.
 
