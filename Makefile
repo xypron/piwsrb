@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: BSD-2-Clause
+#
+# Copyright 2019 Heinrich Schuchardt <xypron.glpk@gmx.de>
+
 all:
 
 install:
