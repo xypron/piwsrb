@@ -1,0 +1,12 @@
+[Unit]
+Description=Waveshare RPi Relay/Expansion Board
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/relay-card.gpio export
+RemainAfterExit=true
+
+ExecStop=/usr/bin/relay-card.gpio unexport
+
+[Install]
+WantedBy=multi-user.target
